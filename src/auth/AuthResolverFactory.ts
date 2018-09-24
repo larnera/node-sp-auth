@@ -27,7 +27,7 @@ export class AuthResolverFactory {
     }
 
     if (authOptions.isUserCredentialsOnpremise(siteUrl, options)) {
-      return new OnpremiseUserCredentials(siteUrl, options);
+      return new OnlineUserCredentials(siteUrl, options);
     }
 
     if (authOptions.isUserCredentialsOnline(siteUrl, options)) {
